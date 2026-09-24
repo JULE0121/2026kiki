@@ -1,5 +1,6 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
+import Home from "./pages/Home";
 
 function Placeholder({ title }) {
   return (
@@ -7,17 +8,7 @@ function Placeholder({ title }) {
       <p className="eyebrow">COMING SOON</p>
       <h1>{title}</h1>
       <p>다음 작업에서 이 페이지를 채워갈 예정입니다.</p>
-      <Link to="/">홈으로 돌아가기</Link>
-    </section>
-  );
-}
-
-function Home() {
-  return (
-    <section className="page-placeholder">
-      <p className="eyebrow">EARRING SHOP</p>
-      <h1>귀걸이 쇼핑몰</h1>
-      <p>프론트엔드만으로 만드는 React 쇼핑몰 프로젝트입니다.</p>
+      <a href="/">홈으로 돌아가기</a>
     </section>
   );
 }
